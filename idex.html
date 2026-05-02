@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///Users/sakshi/Downloads/Portfolio_Sakshi_Pacharne_EDITABLE.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8D5A3;
+    --gold-pale: #F7F0E0;
+    --black: #0D0D0D;
+    --dark: #1A1A1A;
+    --charcoal: #2C2C2C;
+    --mid: #555555;
+    --light: #999999;
+    --white: #FFFFFF;
+    --off-white: #FAFAF8;
+    --border: #2E2E2E;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, serif; background: var(--black); color: var(--white); font-size: 11pt; line-height: 1.7; }
+
+  /* COVER */
+  .cover { page-break-after: always; min-height: 297mm; background: var(--black); display: flex; flex-direction: column; justify-content: space-between; padding: 60px 64px; }
+  .cover-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .cover-badge { font-family: Arial, sans-serif; font-size: 8pt; font-weight: bold; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 6px 14px; }
+  .cover-year { font-family: Arial, sans-serif; font-size: 8pt; color: var(--light); letter-spacing: 0.1em; }
+  .cover-center { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 80px 0 40px; }
+  .cover-eyebrow { font-family: Arial, sans-serif; font-size: 8pt; font-weight: bold; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; }
+  .cover-name { font-size: 52pt; font-weight: bold; line-height: 1.05; color: var(--white); margin-bottom: 18px; }
+  .cover-name span { color: var(--gold); }
+  .cover-title { font-family: Arial, sans-serif; font-size: 11pt; font-weight: normal; color: var(--light); letter-spacing: 0.04em; margin-bottom: 40px; }
+  .cover-divider { width: 56px; height: 1px; background: var(--gold); margin-bottom: 32px; }
+  .cover-tagline { font-family: Arial, sans-serif; font-size: 12pt; font-weight: 300; color: #CCCCCC; line-height: 1.75; max-width: 480px; }
+  .cover-tagline strong { color: var(--white); font-weight: bold; }
+  .cover-bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .contact-row { display: flex; gap: 36px; }
+  .contact-item { display: flex; flex-direction: column; gap: 4px; }
+  .contact-label { font-family: Arial, sans-serif; font-size: 7pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: bold; }
+  .contact-value { font-family: Arial, sans-serif; font-size: 9pt; color: var(--white); }
+  .cover-niche { font-family: Arial, sans-serif; font-size: 8pt; color: var(--light); letter-spacing: 0.08em; text-align: right; line-height: 1.9; }
+
+  /* INNER PAGES */
+  .page { background: var(--off-white); color: var(--black); min-height: 297mm; padding: 52px 64px; page-break-after: always; }
+  .page-last { page-break-after: avoid; }
+  .page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 44px; padding-bottom: 18px; border-bottom: 1px solid #E0DDD6; }
+  .page-section-label { font-family: Arial, sans-serif; font-size: 7.5pt; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold); font-weight: bold; }
+  .page-num { font-family: Arial, sans-serif; font-size: 8pt; color: #AAAAAA; letter-spacing: 0.1em; }
+
+  /* ABOUT */
+  .intro-headline { font-size: 28pt; font-weight: bold; line-height: 1.2; color: var(--black); margin-bottom: 8px; }
+  .intro-headline span { color: var(--gold); }
+  .intro-sub { font-family: Arial, sans-serif; font-size: 10pt; color: var(--mid); margin-bottom: 40px; }
+  .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 44px; }
+  .intro-card { background: var(--white); border: 1px solid #E8E5DE; padding: 22px 24px; }
+  .intro-card-label { font-family: Arial, sans-serif; font-size: 7pt; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); font-weight: bold; margin-bottom: 10px; }
+  .intro-card-text { font-family: Arial, sans-serif; font-size: 9.5pt; color: var(--charcoal); line-height: 1.7; }
+  .intro-statement { background: var(--black); padding: 30px 34px; }
+  .intro-statement p { font-size: 12.5pt; color: var(--white); line-height: 1.8; }
+  .intro-statement em { color: var(--gold); font-style: normal; }
+
+  /* POSTS */
+  .post-block { margin-bottom: 38px; }
+  .post-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .post-number { font-family: Arial, sans-serif; font-size: 7pt; font-weight: bold; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); background: #F5EED6; padding: 4px 10px; }
+  .post-type { font-family: Arial, sans-serif; font-size: 7.5pt; letter-spacing: 0.16em; text-transform: uppercase; color: #AAAAAA; }
+  .post-body { background: var(--white); border: 1px solid #E8E5DE; border-left: 3px solid var(--gold); padding: 24px 28px; }
+  .post-hook { font-size: 11pt; font-weight: bold; color: var(--black); margin-bottom: 12px; line-height: 1.4; }
+  .post-text { font-family: Arial, sans-serif; font-size: 9.5pt; color: var(--charcoal); line-height: 1.9; white-space: pre-line; }
+  .post-text strong { font-weight: bold; color: var(--black); }
+
+  /* SERVICES */
+  .services-intro { font-size: 24pt; font-weight: bold; color: var(--black); line-height: 1.25; margin-bottom: 8px; }
+  .services-intro span { color: var(--gold); }
+  .services-sub { font-family: Arial, sans-serif; font-size: 10pt; color: var(--mid); margin-bottom: 36px; }
+  .services-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-bottom: 40px; }
+  .service-card { background: var(--white); border: 1px solid #E8E5DE; padding: 26px 22px; }
+  .service-num { font-size: 26pt; font-weight: bold; color: #E8D5A3; margin-bottom: 12px; line-height: 1; }
+  .service-name { font-family: Arial, sans-serif; font-size: 10pt; font-weight: bold; color: var(--black); margin-bottom: 10px; line-height: 1.4; }
+  .service-desc { font-family: Arial, sans-serif; font-size: 8.5pt; color: var(--mid); line-height: 1.7; }
+  .service-includes { margin-top: 14px; padding-top: 12px; border-top: 1px solid #F0EDE6; }
+  .service-includes-label { font-family: Arial, sans-serif; font-size: 7pt; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: bold; margin-bottom: 7px; }
+  .service-item { font-family: Arial, sans-serif; font-size: 8pt; color: var(--charcoal); margin-bottom: 4px; padding-left: 12px; position: relative; }
+  .service-item::before { content: '\2014'; position: absolute; left: 0; color: var(--gold); font-size: 7pt; }
+
+  /* CTA PAGE */
+  .cta-page { background: var(--black); color: var(--white); min-height: 297mm; padding: 0; display: flex; flex-direction: column; }
+  .cta-top { flex: 1; padding: 80px 64px 60px; display: flex; flex-direction: column; justify-content: center; }
+  .cta-eyebrow { font-family: Arial, sans-serif; font-size: 8pt; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); font-weight: bold; margin-bottom: 24px; }
+  .cta-headline { font-size: 38pt; font-weight: bold; line-height: 1.15; color: var(--white); margin-bottom: 28px; }
+  .cta-headline span { color: var(--gold); }
+  .cta-body { font-family: Arial, sans-serif; font-size: 11pt; color: #BBBBBB; line-height: 1.8; max-width: 500px; margin-bottom: 50px; }
+  .cta-body strong { color: var(--white); font-weight: bold; }
+  .cta-contacts { display: flex; border: 1px solid var(--border); max-width: 560px; }
+  .cta-contact-item { flex: 1; padding: 22px 24px; border-right: 1px solid var(--border); }
+  .cta-contact-item:last-child { border-right: none; }
+  .cta-contact-label { font-family: Arial, sans-serif; font-size: 7pt; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: bold; margin-bottom: 6px; }
+  .cta-contact-value { font-family: Arial, sans-serif; font-size: 9pt; color: var(--white); }
+  .cta-bottom { background: var(--dark); padding: 22px 64px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); }
+  .cta-bottom-name { font-family: Arial, sans-serif; font-size: 9pt; color: var(--light); }
+  .cta-bottom-name strong { color: var(--white); font-weight: bold; }
+  .cta-bottom-niche { font-family: Arial, sans-serif; font-size: 8pt; color: var(--light); letter-spacing: 0.08em; }
+
+  @page { size: A4; margin: 0; }
+  @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="cover">
+  <div class="cover-top">
+    <span class="cover-badge">Ghostwriting Portfolio</span>
+    <span class="cover-year">2026</span>
+  </div>
+  <div class="cover-center">
+    <div class="cover-eyebrow">Phone Content &amp; Personal Brand</div>
+    <div class="cover-name">Sakshi<br><span>Pacharne</span></div>
+    <div class="cover-title">LinkedIn Ghostwriter &nbsp;·&nbsp; Real Estate Professionals &nbsp;·&nbsp; Dubai</div>
+    <div class="cover-divider"></div>
+    <div class="cover-tagline">I write LinkedIn content that makes <strong>Dubai real estate professionals</strong> the first person serious buyers and investors think of — before they ever ask for a referral.</div>
+  </div>
+  <div class="cover-bottom">
+    <div class="contact-row">
+      <div class="contact-item">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">sakshipacharne31@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">WhatsApp</span>
+        <span class="contact-value">+91 84510 15552</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+971 58 540 8083</span>
+      </div>
+    </div>
+    <div class="cover-niche">Specialist Niche<br>Dubai Real Estate<br>Professionals</div>
+  </div>
+</div>
+
+<!-- PAGE 2: ABOUT -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-section-label">About This Portfolio</span>
+    <span class="page-num">02</span>
+  </div>
+  <div class="intro-headline">What I Do.<br><span>Who It's For.</span></div>
+  <div class="intro-sub">Every post in this portfolio was written for one niche — Dubai real estate professionals.</div>
+  <div class="intro-grid">
+    <div class="intro-card">
+      <div class="intro-card-label">What I Do</div>
+      <div class="intro-card-text">I write LinkedIn posts in your voice — so you show up consistently without spending hours staring at a blank screen every week.</div>
+    </div>
+    <div class="intro-card">
+      <div class="intro-card-label">Who I Help</div>
+      <div class="intro-card-text">Dubai-based real estate agents and brokers who want to attract serious buyers, investors, and high-net-worth clients through content — not cold outreach.</div>
+    </div>
+    <div class="intro-card">
+      <div class="intro-card-label">The Result</div>
+      <div class="intro-card-text">A personal brand that builds trust before the first call. Content that makes people reach out to you — instead of the other way around.</div>
+    </div>
+    <div class="intro-card">
+      <div class="intro-card-label">My Approach</div>
+      <div class="intro-card-text">No templates. No recycled advice. Every post is written from your experience, your perspective, and your market — with one goal: make you impossible to ignore.</div>
+    </div>
+  </div>
+  <div class="intro-statement">
+    <p>Most real estate agents in Dubai are brilliant at their job.<br>They just never learned how to <em>talk about it</em> in a way that attracts the right clients.<br><br>That's exactly what I fix.</p>
+  </div>
+</div>
+
+<!-- PAGE 3: POSTS 1 & 2 -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-section-label">Sample Phone Posts</span>
+    <span class="page-num">03</span>
+  </div>
+  <div class="post-block">
+    <div class="post-meta">
+      <span class="post-number">Post 01</span>
+      <span class="post-type">Storytelling</span>
+    </div>
+    <div class="post-body">
+      <div class="post-hook">11pm. My phone rang.</div>
+      <div class="post-text">It was a client. Not my client — someone else's.
+
+He had signed two weeks earlier. Paid 180,000 AED upfront. 2% commission. No questions asked.
+
+The developer had gone completely silent. No updates. No calls back. Nothing.
+
+He wasn't naive. He wasn't rushing. He just trusted the wrong person. That's the part that stays with me.
+
+We spent three hours on the phone going through everything — contracts, options, next steps. We found a way forward.
+
+But I kept thinking: this conversation should have happened before he signed. Not after.
+
+Here's what I've learned: the unit is almost never the risk. The developer is.
+
+Do your homework. Or work with someone who already has.</div>
+    </div>
+  </div>
+  <div class="post-block">
+    <div class="post-meta">
+      <span class="post-number">Post 02</span>
+      <span class="post-type">Authority — 3 Mistakes Buyers Make</span>
+    </div>
+    <div class="post-body">
+      <div class="post-hook">Three mistakes I see buyers make in Dubai — every single week.</div>
+      <div class="post-text">Not because they're careless. Because nobody warned them.
+
+<strong>1. They fall in love with the view, not the numbers.</strong>
+The apartment looks stunning. Then the yield comes in at 4% on an overpriced asset. Always run the numbers before you run to the showroom.
+
+<strong>2. They wait for the "right time."</strong>
+I've watched people sit on the sidelines for 18 months waiting for prices to dip. They're now paying 30% more. Dubai doesn't wait for hesitation.
+
+<strong>3. They trust the project. Not the developer.</strong>
+A beautiful brochure is easy to produce. A clean delivery record is not. Ask how many projects they've completed. Ask for actual handover data.
+
+Buying in Dubai can be one of the best decisions you make — or one of the most expensive. The difference is almost always in the preparation.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 4: POSTS 3 & 4 -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-section-label">Sample Phone Posts</span>
+    <span class="page-num">04</span>
+  </div>
+  <div class="post-block">
+    <div class="post-meta">
+      <span class="post-number">Post 03</span>
+      <span class="post-type">Unpopular Opinion</span>
+    </div>
+    <div class="post-body">
+      <div class="post-hook">I've talked clients out of buying more times than I've sold to them.</div>
+      <div class="post-text">Wrong developer. Wrong entry price. Wrong area for their actual goal.
+
+Those conversations cost me commission. I had them anyway.
+
+Here's something most people in this industry won't say out loud: most buyers don't need a real estate agent. They need an advisor.
+
+An agent's job is to close. An advisor's job is to protect you from the wrong close. Those are completely different things.
+
+I've never pushed a deal I didn't believe in. Not because I'm noble — because I've seen what happens when someone buys on borrowed confidence. They lose money. They lose trust. They never forgive themselves.
+
+The clients who listened to my "walk away" advice always came back. With bigger budgets. With referrals. With loyalty no commission can manufacture.
+
+Honesty is the longest game in this market. It's also the best one.</div>
+    </div>
+  </div>
+  <div class="post-block">
+    <div class="post-meta">
+      <span class="post-number">Post 04</span>
+      <span class="post-type">Personal Story</span>
+    </div>
+    <div class="post-body">
+      <div class="post-hook">I came to Dubai with one suitcase and zero idea what I was doing.</div>
+      <div class="post-text">Hospitality job. Shared apartment. Watching everyone around me talk about property like it was a second language I hadn't learned yet.
+
+My first year here, colleagues were buying units. I didn't even know where to start.
+
+So I got obsessive. I visited showrooms on weekends just to understand the difference between buildings. I walked communities I couldn't afford yet. I asked every developer, agent, and investor: how does this actually work?
+
+Then I made my first investment — before I had a license, before any credentials. Just with what I'd learned from being relentlessly curious.
+
+And I realised something: most people in this city feel exactly the way I felt that first year. Overwhelmed. Unsure who to trust.
+
+That's why I got into this. Not to sell square footage. To be the person I desperately needed — and didn't have — when I was starting out.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 5: POSTS 5 & 6 -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-section-label">Sample Phone Posts</span>
+    <span class="page-num">05</span>
+  </div>
+  <div class="post-block">
+    <div class="post-meta">
+      <span class="post-number">Post 05</span>
+      <span class="post-type">Educational — Off-Plan vs Ready</span>
+    </div>
+    <div class="post-body">
+      <div class="post-hook">Every week someone asks me: off-plan or ready property?</div>
+      <div class="post-text">Every week I give the same answer. Wrong question.
+
+Off-plan is not better. Ready is not safer. They're different tools — and the wrong tool for your situation is always a bad deal.
+
+<strong>Off-plan makes sense when:</strong> You have patience, a lower entry price in mind, and a 2–3 year horizon. And you've verified the developer actually delivers on time.
+
+<strong>Ready makes sense when:</strong> You want rental income now. You want to see exactly what you're buying. You can't afford delays — financially or emotionally.
+
+The simple breakdown:
+— End-user moving to Dubai → Ready. Always.
+— Investor with 3-year outlook + verified developer → Off-plan.
+— Investor who needs yield today → Ready. No question.
+
+Stop asking which is better. Start asking which is better for you.</div>
+    </div>
+  </div>
+  <div class="post-block">
+    <div class="post-meta">
+      <span class="post-number">Post 06</span>
+      <span class="post-type">Trust-Building — First-Time Buyers</span>
+    </div>
+    <div class="post-body">
+      <div class="post-hook">If you're buying in Dubai for the first time — slow down.</div>
+      <div class="post-text">Not because the market is dangerous. Because the excitement of this city makes people move faster than they should.
+
+You will see stunning units. You will meet charming agents. You will feel urgency that may or may not be real.
+
+Ask better questions. Not just "what's the price per sqft" — but: Who is the developer? What's their delivery record? What's the service charge history? What does exit look like in three years?
+
+A property in Dubai is not just a home or an investment. It's a relationship with a developer, a community, a management company, and a market that moves fast and doesn't give refunds.
+
+Work with someone who'll tell you the truth. Not someone who tells you what you want to hear to close the deal.
+
+First-time buyers don't need more options. They need better guidance.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 6: SERVICES -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-section-label">Services</span>
+    <span class="page-num">06</span>
+  </div>
+  <div class="services-intro">How We <span>Work Together</span></div>
+  <div class="services-sub">Three ways to build your LinkedIn presence — pick what fits where you are right now.</div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-name">Monthly LinkedIn Ghostwriting</div>
+      <div class="service-desc">Done-for-you posts written in your voice, every month. You review, approve, and post. That's it.</div>
+      <div class="service-includes">
+        <div class="service-includes-label">Includes</div>
+        <div class="service-item">4–8 posts per month</div>
+        <div class="service-item">Written in your tone &amp; voice</div>
+        <div class="service-item">Unlimited revisions</div>
+        <div class="service-item">Post calendar + scheduling</div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-name">Content Strategy &amp; Positioning</div>
+      <div class="service-desc">A clear plan for what to post, how often, and why — built around your goals and your specific market.</div>
+      <div class="service-includes">
+        <div class="service-includes-label">Includes</div>
+        <div class="service-item">60-day content roadmap</div>
+        <div class="service-item">Topic pillars for your niche</div>
+        <div class="service-item">Hook bank (30+ ideas)</div>
+        <div class="service-item">Competitor content audit</div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-name">Personal Brand Build</div>
+      <div class="service-desc">Define your angle, your story, and your voice — so your profile works even when you're not actively posting.</div>
+      <div class="service-includes">
+        <div class="service-includes-label">Includes</div>
+        <div class="service-item">LinkedIn profile rewrite</div>
+        <div class="service-item">Brand voice document</div>
+        <div class="service-item">Pinned post strategy</div>
+        <div class="service-item">Bio + headline copy</div>
+      </div>
+    </div>
+  </div>
+  <div class="intro-statement">
+    <p>All packages are tailored to your goals, your voice, and your timeline.<br>No lock-in contracts. No bloated retainers. <em>Just work that moves the needle.</em></p>
+  </div>
+</div>
+
+<!-- PAGE 7: CTA -->
+<div class="cta-page page-last">
+  <div class="cta-top">
+    <div class="cta-eyebrow">Let's Talk</div>
+    <div class="cta-headline">Ready to become the agent<br><span>everyone already knows?</span></div>
+    <div class="cta-body">Send me a message. No pitch. No pressure.<br>Just a <strong>quick conversation</strong> to see if we're the right fit — and what your Phone could actually look like with the right content behind it.</div>
+    <div class="cta-contacts">
+      <div class="cta-contact-item">
+        <div class="cta-contact-label">Email</div>
+        <div class="cta-contact-value">sakshipacharne31@gmail.com</div>
+      </div>
+      <div class="cta-contact-item">
+        <div class="cta-contact-label">WhatsApp</div>
+        <div class="cta-contact-value">+91 84510 15552</div>
+      </div>
+      <div class="cta-contact-item">
+        <div class="cta-contact-label">Phone</div>
+        <div class="cta-contact-value">+971 58 540 8083</div>
+      </div>
+    </div>
+  </div>
+  <div class="cta-bottom">
+    <div class="cta-bottom-name"><strong>Sakshi Pacharne</strong> &nbsp;·&nbsp; Phone Ghostwriter</div>
+    <div class="cta-bottom-niche">Specialist &nbsp;·&nbsp; Dubai Real Estate Professionals</div>
+  </div>
+</div>
+
+
+
+</body></html>
